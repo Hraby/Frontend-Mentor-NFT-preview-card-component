@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Outfit;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card{
+    height: auto;
+    width: 22rem;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card .img-coin{
+    width: 10px;
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 22rem;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+.img-coin:hover .overlay {
+    opacity: 1;
+}
+
+.card .info{
+    padding-top: 24px ;
+}
+
+.card h3{
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+}
+
+.card h3:hover{
+    transition: 0.25s;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card .info img{
+    height: 22px;
+    width: auto;
+}
+
+.card p{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+.card .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .eth{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .eth a{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.card .time a{
+    color: hsl(215, 51%, 70%);
+}
+
+.card .time{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .line{
+    margin-top: 24px;
+    border-top: 2px solid hsl(215, 32%, 27%);
+}
+
+.card .autor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    max-height: max-content;
+}
+
+.card .autor a{
+    color: white;
+}
+
+.card .autor a:hover{
+    transition: 0.25s;
+    color: hsl(178, 100%, 50%);
+}
